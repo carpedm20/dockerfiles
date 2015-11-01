@@ -13,7 +13,7 @@ RUN git clone https://github.com/torch/distro.git ~/torch --recursive
 RUN cd ~/torch; ./install.sh
 
 # Install Folly, fbthrift, thpp and fblualib
-RUN curl -sk https://raw.githubusercontent.com/soumith/fblualib/master/install_all.sh | bash -e
+RUN curl -sk https://raw.githubusercontent.com/facebook/fblualib/master/install_all.sh | bash
 
 # Set ~/torch as working directory
 WORKDIR /root/torch
