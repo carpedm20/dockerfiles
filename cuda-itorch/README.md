@@ -7,6 +7,7 @@ Usage
 -----
 
     docker run \
-      --device=/dev/nvidia0:/dev/nvidia0 \
+      --device /dev/nvidia0:/dev/nvidia0 \
+      --device /dev/nvidia-uvm \
       --device /dev/nvidiactl \
-      -it carpedm20/cuda-itorch
+      -it carpedm20/cuda-itorch /bin/bash
